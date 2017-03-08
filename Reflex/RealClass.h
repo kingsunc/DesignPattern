@@ -1,0 +1,34 @@
+#pragma once
+#include "ClassFactory.h"
+#include <iostream>
+using namespace std;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CRealClass
+class CRealClass
+{
+	DECLARE_MYCLASS(CRealClass);
+public:
+	CRealClass();
+	virtual ~CRealClass();
+};	
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CRealClassA
+class CRealClassA: public CRealClass
+{
+	DECLARE_MYCLASS(CRealClassA);
+public:
+	CRealClassA();
+	virtual ~CRealClassA();
+};
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CRealClassB
+class CRealClassB: public CRealClass
+{
+	DECLARE_MYCLASS(CRealClassB);
+public:
+	CRealClassB();
+	virtual ~CRealClassB();
+};
