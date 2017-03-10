@@ -1,11 +1,11 @@
 #include "Adaptee.h"
 
-CAdaptee::CAdaptee(void)
+CAdaptee::CAdaptee()
 {
 }
 
 
-CAdaptee::~CAdaptee(void)
+CAdaptee::~CAdaptee()
 {
 }
 

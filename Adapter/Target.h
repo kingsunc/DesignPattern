@@ -8,4 +8,8 @@ public:
 	virtual ~CTarget(void);
 
 	virtual void Requst() = 0; // 目标接口;
+
+	void Realease();
 };
+
+CTarget* Create_Target();

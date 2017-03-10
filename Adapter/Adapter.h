@@ -2,15 +2,16 @@
 #include "Target.h"
 #include "Adaptee.h"
 
-#define ADAPTER_CLASS		0
+// 若定义 使用类继承适配器;
+//#define ADAPTER_CLASS	
 
 #ifndef ADAPTER_CLASS
 // 对象适配器;
 class CAdapter: public CTarget
 {
 public:
-	CAdapter(void);
-	~CAdapter(void);
+	CAdapter();
+	virtual ~CAdapter();
 
 	virtual void Requst();
 
@@ -22,8 +23,8 @@ private:
 class CAdapter : public CTarget, public CAdaptee
 {
 public:
-	CAdapter(void);
-	~CAdapter(void);
+	CAdapter();
+	~CAdapter();
 
 	virtual void Requst();
 };

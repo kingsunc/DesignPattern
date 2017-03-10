@@ -1,12 +1,12 @@
 #include "Adapter.h"
 
 
-CAdapter::CAdapter(void)
+CAdapter::CAdapter()
 {
 }
 
 
-CAdapter::~CAdapter(void)
+CAdapter::~CAdapter()
 {
 }
 

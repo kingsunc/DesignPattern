@@ -1,10 +1,23 @@
-#include "Adapter.h"
+/*------------------------------------------------------------------------------------------------------------------------
+											适配器模式;
+	
+
+	说明;
+	对于client来说 它只知道CTarget及其接口;
+	关于具体的适配器实现及被适配者 客户端不知道也并不关心;
+
+	用途;
+	可用于SDK最后的适配包装;
+
+------------------------------------------------------------------------------------------------------------------------*/
+
+#include "Target.h"
 
 void main()
 {
-	CTarget* pTarget = new CAdapter();
+	CTarget* pTarget = Create_Target();
 	pTarget->Requst();
 
-	delete pTarget;
-	pTarget = NULL;
+	pTarget->Realease();
+	pTarget = nullptr;
 }
